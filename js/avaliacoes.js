@@ -1,4 +1,3 @@
-const urlBase = "https://jsonplaceholder.typicode.com/guide/";
 const fazerRequisicao = async () => {
     try {
         const request = await fetch("https://dummyjson.com/comments?limit=10&skip=6");
