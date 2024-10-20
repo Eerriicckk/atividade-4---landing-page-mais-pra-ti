@@ -1,0 +1,26 @@
+#divLp1 {
+    /* background-size: contain; */
+    background-size: 125% auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: linear-gradient(rgba(117, 117, 117, 0.5), rgba(64, 97, 94, 0.5)), url('../images/lp1.png');
+}
+
+.container {
+    max-width: 960px;
+}
+
+.icon-link>.bi {
+    width: .75em;
+    height: .75em;
+}
+
+.flex-equal>* {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal>* {
+        flex: 1;
+    }
+}

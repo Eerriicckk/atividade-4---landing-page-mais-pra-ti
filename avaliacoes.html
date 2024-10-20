@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baití pesca</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/my-colors.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="js/components.js"></script>
+    <script type="text/javascript" src="js/avaliacoes.js"></script>
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+
+</head>
+
+<body>
+    <nav id="customHeader" class="navbar navbar-expand-md bg-primary sticky-top border-bottom" data-bs-theme="dark">
+    </nav>
+
+    <main>
+        <div class="d-flex align-items-center py-5 px-3 my-3 display-1 text-center text-secondary" style="height: 50%;">
+            Vejo abaixo o que os nossos clientes acharam dos produtos!
+        </div>
+        <p style="margin-bottom: 30vh">
+            <a href="#comentarios">
+                <img src="images/seta-esquerda.png" style="transform: rotate(270deg);"></p>
+            </a>
+        <div id="comentarios">
+        </div>
+    </main>
+
+    <footer id="customFooter" class="container py-5"></footer>
+    <script>
+        customHeader();
+        customFooter();
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

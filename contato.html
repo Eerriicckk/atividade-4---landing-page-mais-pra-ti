@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baití pesca</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/my-colors.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="js/components.js"></script>
+    <script type="text/javascript" src="js/contato.js"></script>
+
+</head>
+
+<body>
+    <nav id="customHeader" class="navbar navbar-expand-md bg-primary sticky-top border-bottom" data-bs-theme="dark">
+    </nav>
+
+    <main>
+        <div class="pt-3 px-3 pt-md-5 px-md-5 text-start text-secondary">
+            <h1>Entre em contato</h1>
+            <div>
+                <form action="javascript:enviarForm()" method="post">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="nome"
+                                aria-describedby="basic-addon3 basic-addon4" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="email"
+                                aria-describedby="basic-addon3 basic-addon4" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <div class="input-group">
+                            <textarea type="text" class="form-control" id="message"
+                                aria-describedby="basic-addon3 basic-addon4" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <br> <br> <br> <br>
+            <div>
+                <p>Ou nos contate pelo email ou celular abaixo</p>
+                <strong>Email:</strong> comercialbaiti@baiti.com.br
+                <br /><strong>Telefone:</strong> +55 00 9 8765-4321
+            </div>
+        </div>
+    </main>
+
+    <footer id="customFooter" class="container py-5"></footer>
+    <script>
+        customHeader();
+        customFooter();
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "U8HSulh4mCFWft-7F",
+            });
+        })();
+    </script>
+</body>
+
+</html>

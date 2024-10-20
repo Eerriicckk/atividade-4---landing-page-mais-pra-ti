@@ -1,0 +1,22 @@
+// required to get $orange variable
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+$primary: #5c8c88; // set the $primary variable
+$success: #8aa26f;
+$secondary: #40615e;
+$info: #8fb4b4;
+$warning: #cddadb;
+$danger: #b8aa83;
+
+// merge with existing $theme-colors map
+$theme-colors: map-merge($theme-colors, ("primary": $primary,
+            "success":$success,
+            "info":$info,
+            "warning":$warning,
+            "danger":$danger,
+            "secondary":$secondary
+        ));
+
+// set changes
+@import "node_modules/bootstrap/scss/bootstrap";

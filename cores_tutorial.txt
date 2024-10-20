@@ -1,0 +1,7 @@
+baixar sass:
+npm install -g sass
+
+permitir rodar scripts nao assinados(rode Get-ExecutionPolicy para saber a politica atual e voltar para ela depois):
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted CurrentUser
+
+sass --watch <path scss> <path css destino>
